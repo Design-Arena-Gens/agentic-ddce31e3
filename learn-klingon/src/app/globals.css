@@ -1,0 +1,62 @@
+:root {
+  --color-black: #0c0c0c;
+  --color-charcoal: #141414;
+  --color-steel: #4a4a4a;
+  --color-crimson: #8b0000;
+  --color-amber: #f5d742;
+  --color-text: #f0f0f0;
+  --color-muted: #bcbcbc;
+  --max-width: 1200px;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-text);
+  background: radial-gradient(circle at top left, #1c0000 0%, #0b0b0b 45%, #020202 100%);
+  font-family: var(--font-body), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-amber);
+  outline-offset: 4px;
+}
